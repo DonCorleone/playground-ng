@@ -17,8 +17,5 @@ export class AppComponent {
 
   constructor(private bloggerService: BloggerService) {
     this.blogs$ = this.bloggerService.blogs$;
-    const y = this.blogs$.subscribe((blog) => {
-      console.log(blog);
-    } );
   }
 }
